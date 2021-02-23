@@ -1,21 +1,13 @@
 {
-  "name": "template-ts",
-  "version": "1.0.0",
-  "description": "description",
+  "name": "TODO",
+  "version": "0.0.1",
+  "description": "TODO",
   "main": "dist/index.js",
-  "dependencies": {
-    "@types/react": "^17.0.1",
-    "@types/react-dom": "^17.0.1",
-    "@types/styled-components": "^5.1.7",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "styled-components": "^5.2.1"
-  },
+  "dependencies": {},
   "jest": {
     "collectCoverageFrom": [
       "<rootDir>/src/utils/**/*.ts",
-      "!<rootDir>/src/components/**/*.tsx",
-      "!<rootDir>/node_modules",
+      "!<rootDir>/node_modules/",
       "!<rootDir>/dist/"
     ],
     "testPathIgnorePatterns": [
@@ -39,18 +31,9 @@
     "extends": "@nengo/commitlint-config-nengo"
   },
   "scripts": {
-    "build": "tsc",
     "test": "jest --watchAll",
     "test-coverage": "jest --collectCoverage --passWithNoTests",
     "lint-commits": "commitlint --from main --to HEAD --verbose"
-  },
-  "watch": {
-    "build": {
-      "patterns": [
-        "src"
-      ],
-      "extensions": "ts,tsx"
-    }
   },
   "husky": {
     "hooks": {
@@ -99,7 +82,6 @@
     "husky": "^4.3.0",
     "jest": "^26.6.0",
     "lint-staged": "^10.5.1",
-    "prettier": "^2.1.2",
-    "typescript": "^4.0.3"
+    "prettier": "^2.1.2"
   }
 }
