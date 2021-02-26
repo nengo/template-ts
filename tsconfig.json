@@ -1,11 +1,11 @@
 {
-"compilerOptions": {
+  "compilerOptions": {
     "baseUrl": "src",
     "target": "es5",
     "lib": [
-    "dom",
-    "dom.iterable",
-    "esnext"
+      "dom",
+      "dom.iterable",
+      "esnext"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -21,7 +21,8 @@
     "jsx": "react",
     "outDir": "dist",
     "noImplicitAny": false
-},
-"include": ["src"]
+  },
+  "include": [
+    "src"
+  ]
 }
-  
